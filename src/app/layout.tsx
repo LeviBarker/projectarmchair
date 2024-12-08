@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <main className="relative h-screen overflow-auto">
-          <nav className="fixed w-full h-16 flex items-center justify-between">Navigation</nav>
+          <Navigation />
           <section>{children}</section>
           <footer>
             Footer
