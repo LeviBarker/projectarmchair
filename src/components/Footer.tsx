@@ -1,21 +1,5 @@
-import Link from "next/link";
 
 export default function Footer() {
-
-    const routes = [
-        {
-            name: 'Home',
-            href: ''
-        },
-        {
-            name: 'Meet Us',
-            href: '/meet-us'
-        },
-        {
-            name: 'Get Involved',
-            href: '/get-involved'
-        }
-    ]
 
     return (
         <nav className="bg-stone-800 h-32 w-full flex items-center justify-between px-4">
