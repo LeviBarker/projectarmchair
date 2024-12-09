@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ProjectArmchairLogo from "./ProjectArmchairLogo";
+import ProjectArmchairLogo from "@/components/ProjectArmchairLogo";
 
 export default function Navigation() {
 
