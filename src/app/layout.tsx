@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +21,7 @@ export default function RootLayout({
         <main className="relative h-screen overflow-auto">
           <Navigation />
           <section>{children}</section>
-          <footer>
-            Footer
-          </footer>
+          <Footer />
         </main>
       </body>
     </html>
