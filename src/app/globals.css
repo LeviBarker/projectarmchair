@@ -21,3 +21,32 @@ body {
   background: var(--background);
   font-family: Poppins, Helvetica, sans-serif;
 }
+
+.animate-fade-in-and-up {
+  opacity: 0;
+  animation: 1000ms fade-in-and-up 200ms forwards;
+}
+
+.animation-delay-200ms {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400ms {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600ms {
+  animation-delay: 600ms;
+}
+
+@keyframes fade-in-and-up {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

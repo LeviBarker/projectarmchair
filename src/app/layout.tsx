@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <main className="relative h-screen overflow-auto">
+        <main id="app-shell" className="relative h-screen overflow-auto bg-white">
           <Navigation />
           <section>{children}</section>
           <Footer />

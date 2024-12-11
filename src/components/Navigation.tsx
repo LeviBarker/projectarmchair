@@ -1,6 +1,10 @@
+'use client';
+
 import Link from "next/link";
 import ProjectArmchairLogo from "@/components/ProjectArmchairLogo";
 import {HeartIcon} from "@heroicons/react/24/solid";
+import {useEffect, useState} from "react";
+
 
 export default function Navigation() {
 
@@ -19,8 +23,20 @@ export default function Navigation() {
         }
     ]
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    const handleScroll = (event: Event) => {
+        setIsScrolled((event.target as HTMLElement).scrollTop > 100)
+    }
+
+    useEffect(() => {
+        const appShell = document.getElementById("app-shell");
+        appShell?.addEventListener('scroll', handleScroll);
+        return () => appShell?.removeEventListener('scroll', handleScroll);
+    });
+
     return (
-        <nav className="h-24 w-full flex items-center justify-between px-8 fixed top-0 left-0">
+        <nav style={{backgroundColor: isScrolled ? "#27272a" : ""}} className="transition-colors duration-700 h-24 w-full flex items-center justify-between px-8 fixed top-0 left-0 z-10">
             <ProjectArmchairLogo className="h-16" />
             <ul className="hidden md:flex items-center gap-2">
                 {routes.map(route => (
