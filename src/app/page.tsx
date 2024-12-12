@@ -61,7 +61,7 @@ export default function Home() {
                 </p>
                 <h2 className="font-bold text-2xl">Vision</h2>
                 <p>
-                    "The sun streams through tall windows in yellow shafts of warmth. The room is quiet, save for the gentle tick of the mantle clock, and speckles of golden dust float noiselessly in the vacuum sound. The chair is massive, soft, and well-worn; like the hug of an old, fuzzy bear. A child is there, lost in the hug of the chair, mesmerized by the hush of the sanctuary. The book in his lap is a portal to another universe. One without pain, fear, or uncertainty. The child in the enormous chair does not hear the tick of the clock or see the golden specks that float aorund his head. He is only cognizant of the place he has entered through The Portal. His heart is light and his world at peace. For this magic, sacred moment, all is well."
+                    &#34;The sun streams through tall windows in yellow shafts of warmth. The room is quiet, save for the gentle tick of the mantle clock, and speckles of golden dust float noiselessly in the vacuum sound. The chair is massive, soft, and well-worn; like the hug of an old, fuzzy bear. A child is there, lost in the hug of the chair, mesmerized by the hush of the sanctuary. The book in his lap is a portal to another universe. One without pain, fear, or uncertainty. The child in the enormous chair does not hear the tick of the clock or see the golden specks that float around his head. He is only cognizant of the place he has entered through The Portal. His heart is light and his world at peace. For this magic, sacred moment, all is well.&#34;
                 </p>
             </div>
         </>
