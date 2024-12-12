@@ -3,8 +3,8 @@ import {BookOpenIcon} from "@heroicons/react/24/solid";
 export default function Home() {
     return (
         <>
-            <div className="h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex items-center justify-center">
-                <div className="flex gap-3">
+            <div className="h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex items-center justify-center lg:pt-0 pt-24 px-8">
+                <div className="flex flex-col lg:flex-row gap-3">
                     <div className="max-w-lg relative">
                         <BookOpenIcon
                             className="animation-delay-600ms animate-fade-in-and-up absolute -top-6 -left-6 h-32 z-0 text-red-400"/>
@@ -17,15 +17,17 @@ export default function Home() {
                             readings of the gifted book.
                         </p>
                     </div>
-                    <div>
-                        <div>Video</div>
+                    <div className="z-5">
+                        <video className="lg:mt-0 mt-8 w-96 rounded-xl shadow" crossOrigin="anonymous" playsInline={true}
+                               preload="auto" loop={true} tabIndex={-1} autoPlay={true}
+                               src="https://video.wixstatic.com/video/e4c3dd_d61698dff1a24cdeb588c0729cc0fab2/360p/mp4/file.mp4"></video>
                     </div>
                 </div>
-                {/*<BookOpenIcon className="opacity-15 absolute bottom-8 right-8 h-12 rotate-6" />*/}
-                {/*<BookOpenIcon className="opacity-15 absolute bottom-12 right-32 h-12 rotate-12" />*/}
-                {/*<BookOpenIcon className="opacity-15 absolute bottom-10 right-56 h-10 -rotate-6" />*/}
-                {/*<BookOpenIcon className="opacity-20 absolute bottom-24 right-44 h-12 rotate-12" />*/}
-                {/*<BookOpenIcon className="opacity-30 absolute bottom-28 right-16 h-16 -rotate-12" />*/}
+                <BookOpenIcon className="z-0 text-red-300 animate-fade-in-and-up absolute bottom-8 right-8 h-12 rotate-6" />
+                <BookOpenIcon className="z-0 text-red-400 animate-fade-in-and-up animation-delay-200ms absolute bottom-12 right-32 h-12 rotate-12" />
+                <BookOpenIcon className="z-0 text-red-500 animate-fade-in-and-up animation-delay-400ms absolute bottom-10 right-56 h-10 -rotate-6" />
+                <BookOpenIcon className="z-0 text-red-400 animate-fade-in-and-up animation-delay-600ms absolute bottom-24 right-44 h-12 rotate-12" />
+                <BookOpenIcon className="z-0 text-red-300 animate-fade-in-and-up animation-delay-800ms absolute bottom-28 right-16 h-16 -rotate-12" />
             </div>
             <div className="flex flex-col items-center justify-center p-16 text-stone-900 gap-2">
                 <h2 className="font-bold text-2xl">Background</h2>
@@ -56,6 +58,10 @@ export default function Home() {
                 <h2 className="font-bold text-2xl">Mission</h2>
                 <p>
                     The volunteer educators of Project Armchair are dedicated to serving the hospitalized and homeless children of our community by reading aloud rich children’s literature to children in crisis. Certified teacher volunteers encourage literacy engagement through choice of text (where applicable), model fluent reading, employ simple cognitive strategies, and gift the book to the child, so that the literacy experience may be replicated. It is the goal of Project Armchair to give children in crisis a reprieve from their crisis through the magic of the literacy journey.
+                </p>
+                <h2 className="font-bold text-2xl">Vision</h2>
+                <p>
+                    "The sun streams through tall windows in yellow shafts of warmth. The room is quiet, save for the gentle tick of the mantle clock, and speckles of golden dust float noiselessly in the vacuum sound. The chair is massive, soft, and well-worn; like the hug of an old, fuzzy bear. A child is there, lost in the hug of the chair, mesmerized by the hush of the sanctuary. The book in his lap is a portal to another universe. One without pain, fear, or uncertainty. The child in the enormous chair does not hear the tick of the clock or see the golden specks that float aorund his head. He is only cognizant of the place he has entered through The Portal. His heart is light and his world at peace. For this magic, sacred moment, all is well."
                 </p>
             </div>
         </>

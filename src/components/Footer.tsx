@@ -50,7 +50,7 @@ export default function Footer() {
     ]
 
     return (
-        <nav className="bg-stone-800 w-full flex items-start justify-start gap-10 p-16 flex-wrap">
+        <footer className="bg-stone-800 text-white w-full flex items-start justify-start gap-10 p-16 flex-wrap">
             {linkGroups.map(group => (
                 <div key={group.header}>
                     <h3 className="font-bold text-xl pb-2">{group.header}</h3>
@@ -66,6 +66,6 @@ export default function Footer() {
                 <h3 className="font-bold text-xl pb-2">Testimonials</h3>
                 <blockquote className="border-l-stone-200 border-l-4 pl-8">Lorem ipsum</blockquote>
             </div>
-        </nav>
+        </footer>
     );
 }

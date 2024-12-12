@@ -26,7 +26,7 @@ export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const handleScroll = (event: Event) => {
-        setIsScrolled((event.target as HTMLElement).scrollTop > 100)
+        setIsScrolled((event.target as HTMLElement).scrollTop > 50)
     }
 
     useEffect(() => {
@@ -36,7 +36,7 @@ export default function Navigation() {
     });
 
     return (
-        <nav style={{backgroundColor: isScrolled ? "#27272a" : ""}} className="transition-colors duration-700 h-24 w-full flex items-center justify-between px-8 fixed top-0 left-0 z-10">
+        <nav style={{backgroundColor: isScrolled ? "#27272a" : ""}} className="text-white transition-colors duration-700 h-24 w-full flex items-center justify-between px-8 fixed top-0 left-0 z-10">
             <ProjectArmchairLogo className="h-16" />
             <ul className="hidden md:flex items-center gap-2">
                 {routes.map(route => (
