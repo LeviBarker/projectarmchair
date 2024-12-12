@@ -3,12 +3,12 @@ import {BookOpenIcon} from "@heroicons/react/24/solid";
 export default function Home() {
     return (
         <>
-            <div className="h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex items-center justify-center lg:pt-0 pt-24 px-8">
-                <div className="flex flex-col lg:flex-row gap-3">
+            <div className="h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex items-center justify-center lg:pt-0 pt-32 px-8">
+                <div className="lg:flex gap-3">
                     <div className="max-w-lg relative">
                         <BookOpenIcon
                             className="animation-delay-600ms animate-fade-in-and-up absolute -top-6 -left-6 h-32 z-0 text-red-400"/>
-                        <h1 className="animation-delay-200ms animate-fade-in-and-up text-3xl font-bold pb-4">Teachers
+                        <h1 className="animation-delay-200ms animate-fade-in-and-up text-5xl font-bold pb-4">Teachers
                             reading aloud to children in <em className="italic">crisis</em>.</h1>
                         <p className="animation-delay-400ms animate-fade-in-and-up">
                             Project Armchair reaches out to children who are in need of a moment&#39;s reprieve from
@@ -17,8 +17,8 @@ export default function Home() {
                             readings of the gifted book.
                         </p>
                     </div>
-                    <div className="z-5">
-                        <video className="lg:mt-0 mt-8 w-96 rounded-xl shadow" crossOrigin="anonymous" playsInline={true}
+                    <div className="z-6">
+                        <video className="lg:mt-0 mt-8 w-[560px] rounded-xl shadow" controls={true} crossOrigin="anonymous" playsInline={true}
                                preload="auto" loop={true} tabIndex={-1} autoPlay={true}
                                src="https://video.wixstatic.com/video/e4c3dd_d61698dff1a24cdeb588c0729cc0fab2/360p/mp4/file.mp4"></video>
                     </div>
