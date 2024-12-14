@@ -18,15 +18,15 @@ export default function Footer() {
             links: [
                 {
                     label: 'Join the Team',
-                    href: '#'
+                    href: '/join-the-team'
                 },
                 {
                     label: 'Wish List',
-                    href: '#'
+                    href: '/wish-list'
                 },
                 {
                     label: 'Documents',
-                    href: '#'
+                    href: '/documents'
                 }
             ]
         },

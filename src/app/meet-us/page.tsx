@@ -34,19 +34,82 @@ export default function MeetUs() {
     ]
 
     return (
-        <div className="h-screen p-24 flex-wrap flex items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
-            <div className="flex items-center justify-center gap-16 flex-wrap">
-                {people.map((person, index) => (
-                    <div key={person.name} style={{animationDelay: `${(index + 1) * 100}ms`}} className="flex items-center gap-4 animate-fade-in-and-up">
-                        <div style={{backgroundImage: `url(${person.imageUrl})`}} className="bg-center bg-contain shadow border-stone-100 border-4 w-24 h-24 rounded-full"></div>
-                        <div>
-                            <h2 className="text-xl font-bold text-nowrap">{person.name}</h2>
-                            <h3>{person.position}</h3>
+        <>
+            <div
+                className="h-screen p-24 flex-wrap flex items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
+                <div className="flex items-center justify-center gap-16 flex-wrap">
+                    {people.map((person, index) => (
+                        <div key={person.name} style={{animationDelay: `${(index + 1) * 100}ms`}}
+                             className="flex items-center gap-4 animate-fade-in-and-up">
+                            <div style={{backgroundImage: `url(${person.imageUrl})`}}
+                                 className="bg-center bg-contain shadow border-stone-100 border-4 w-24 h-24 rounded-full"></div>
+                            <div>
+                                <h2 className="text-xl font-bold text-nowrap">{person.name}</h2>
+                                <h3>{person.position}</h3>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-
-        </div>
-    );
+            <div className="flex flex-col items-center justify-center p-16 text-stone-900 gap-2">
+                <h2 className="font-bold text-2xl">Background</h2>
+                <p>
+                    My name is Vonda Dahl and I am the Literacy Coordinator for Mandan Public Schools in Mandan, North
+                    Dakota. I cannot pinpoint the exact moment when the idea for Project Armchair first popped into my
+                    brain. I do know that a few weeks into the 2015 school year, I became aware that a homeless shelter
+                    for families was just blocks from my new school, where I was a reading interventionist, and that
+                    several of our students were living there.
+                </p>
+                <p>
+                    I could not stop thinking about that or about what I might do to help. I eventually dawned on me
+                    that as a reading specialist, I could read to kids, possibly help them with their reading skills,
+                    and in the process, offer the gift of getting lost in a really good story.
+                </p>
+                <p>
+                    But hearing a story is only half the magic. Why not gift the book to them as well? Any teacher of
+                    reading knows that good readers get there by practice, practice, and more practice. And so, with the
+                    purchase of $170 in Scholastic books, I walked through the doors of the Welcome House homeless
+                    shelter and began a journey that would introduce me to people that I am honored to know and taken me
+                    on paths I could not have predicted.
+                </p>
+                <p>
+                    Mason Cooley said that, “Reading gives us someplace to go when we have to stay where we are.” It is
+                    my hope that the books our volunteers place into the hands of precious children in challenging
+                    circumstances will give them a moment of joy and a measure of courage.
+                </p>
+                <h2 className="font-bold text-2xl">Mission</h2>
+                <p>
+                    The volunteer educators of Project Armchair are dedicated to serving the hospitalized and homeless
+                    children
+                    of our community by reading aloud rich children’s literature to children in crisis. Certified
+                    teacher
+                    volunteers encourage literacy engagement through choice of text (where applicable), model fluent
+                    reading,
+                    employ simple cognitive strategies, and gift the book to the child, so that the literacy experience
+                    may be
+                    replicated. It is the goal of Project Armchair to give children in crisis a reprieve from their
+                    crisis
+                    through the magic of the literacy journey.
+                </p>
+                <h2 className="font-bold text-2xl">Vision</h2>
+                <p>
+                    &#34;The sun streams through tall windows in yellow shafts of warmth. The room is quiet, save for
+                    the gentle
+                    tick of the mantle clock, and speckles of golden dust float noiselessly in the vacuum sound. The
+                    chair is
+                    massive, soft, and well-worn; like the hug of an old, fuzzy bear. A child is there, lost in the hug
+                    of the
+                    chair, mesmerized by the hush of the sanctuary. The book in his lap is a portal to another universe.
+                    One
+                    without pain, fear, or uncertainty. The child in the enormous chair does not hear the tick of the
+                    clock or
+                    see the golden specks that float around his head. He is only cognizant of the place he has entered
+                    through
+                    The Portal. His heart is light and his world at peace. For this magic, sacred moment, all is
+                    well.&#34;
+                </p>
+            </div>
+        </>
+    )
+        ;
 }
