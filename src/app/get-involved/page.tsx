@@ -10,11 +10,6 @@ export default function GetInvolved() {
                     <div className="max-w-xl p-8 rounded bg-white text-stone-900">
                         <h1 className="text-3xl font-bold pb-4"><UsersIcon className="h-6 text-purple-800"/>Get Involved
                         </h1>
-                        Below is a list of book titles that are popular and appropriate for the correlating age group
-                        and grade. The primary goal of Project Armchair is to gift high-quality, rich children&#39;s
-                        literature to children in crisis. While there are many worthy children&#39;s books available,
-                        our focus is on literature that scaffolds emergent readers to higher level of proficiency. The
-                        following list meets that criteria.
                     </div>
 
                 </div>

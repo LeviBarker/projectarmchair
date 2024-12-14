@@ -49,7 +49,7 @@ export default function Navigation() {
                     {routes.map(route => (
                         <MenuItem key={route.name}>
                             <Link href={route.href}
-                                  className="font-bold rounded text-white hover:bg-stone-950/25 py-3 px-4 data-[focus]:bg-stone-700">{route.name}</Link>
+                                  className="block font-bold rounded text-white hover:bg-stone-950/25 py-3 px-4 data-[focus]:bg-stone-700">{route.name}</Link>
                         </MenuItem>
                     ))}
                     <MenuItem>
