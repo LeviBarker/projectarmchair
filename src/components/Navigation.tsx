@@ -45,7 +45,8 @@ export default function Navigation() {
                     className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12">
                     <Bars2Icon className="h-6"/>
                 </MenuButton>
-                <MenuItems anchor={{to: 'bottom start', gap: '4px'}} className="bg-stone-800 rounded-xl">
+                <MenuItems anchor={{to: 'bottom start', gap: '4px'}}
+                           className="bg-stone-800 rounded-xl z-10 border-4 border-stone-100">
                     {routes.map(route => (
                         <MenuItem key={route.name}>
                             <Link href={route.href}
