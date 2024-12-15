@@ -36,7 +36,7 @@ export default function MeetUs() {
     return (
         <>
             <div
-                className="h-screen p-24 flex-wrap flex items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
+                className="min-h-screen p-24 flex-wrap flex items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
                 <div className="flex items-center justify-center gap-16 flex-wrap">
                     {people.map((person, index) => (
                         <div key={person.name} style={{animationDelay: `${(index + 1) * 100}ms`}}
