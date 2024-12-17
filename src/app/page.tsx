@@ -1,6 +1,7 @@
 import {BookOpenIcon} from "@heroicons/react/24/solid";
 import {ChevronDownIcon} from "@heroicons/react/16/solid";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
+import Hero from "@/components/Hero";
 
 export default function Home() {
 
@@ -27,9 +28,8 @@ export default function Home() {
 
     return (
         <>
-            <div
-                className="min-h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex items-center justify-center lg:pt-0 pt-32 px-8 pb-4 text-white">
-                <div className="lg:flex gap-3">
+            <Hero>
+                <div className="lg:mt-0 mt-32 lg:flex gap-3">
                     <div className="max-w-lg relative">
                         <BookOpenIcon
                             className="animation-delay-600ms animate-fade-in-and-up absolute -top-6 -left-6 h-32 z-0 text-red-400"/>
@@ -60,13 +60,14 @@ export default function Home() {
                     className="md:inline hidden z-0 text-red-400 animate-fade-in-and-up animation-delay-600ms absolute bottom-24 right-44 h-12 rotate-12"/>
                 <BookOpenIcon
                     className="md:inline hidden z-0 text-red-300 animate-fade-in-and-up animation-delay-800ms absolute bottom-28 right-16 h-16 -rotate-12"/>
-            </div>
+            </Hero>
             <div className="flex items-center justify-start p-8">
                 <div className="w-full">
-                    <h2 className="font-bold text-2xl pb-4">FAQ</h2>
+                    <h2 className="font-bold text-2xl pb-4 text-stone-800">FAQ</h2>
                     <div className="w-full">
                         {FAQs.map(FAQ => (
-                            <Disclosure key={FAQ.title} as="div" className="p-4 bg-gray-100 rounded shadow block mb-4">
+                            <Disclosure key={FAQ.title} as="div"
+                                        className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
                                 <DisclosureButton className="py-2 group flex justify-between items-center w-full">
                                     {FAQ.title}
                                     <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>

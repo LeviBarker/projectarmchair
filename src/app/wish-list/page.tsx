@@ -1,4 +1,5 @@
 import {SparklesIcon} from "@heroicons/react/16/solid";
+import Hero from "@/components/Hero";
 
 export default function WishList() {
 
@@ -123,9 +124,8 @@ export default function WishList() {
 
     return (
         <>
-            <div
-                className="min-h-screen md:p-24 p-8 pt-32 flex-wrap flex items-start md:items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
-                <div className="flex flex-col items-start justify-center gap-16 flex-wrap">
+            <Hero>
+                <div className="mt-32 flex flex-col items-start justify-center gap-16 flex-wrap">
                     <div className="max-w-xl p-8 rounded bg-white text-stone-900">
                         <h1 className="text-3xl font-bold pb-4"><SparklesIcon className="h-6 text-amber-500"/>Wish List
                         </h1>
@@ -156,8 +156,7 @@ export default function WishList() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </Hero>
         </>
-    )
-        ;
+    );
 }

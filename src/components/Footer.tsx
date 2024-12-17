@@ -50,7 +50,7 @@ export default function Footer() {
     ]
 
     return (
-        <footer className="bg-stone-800 text-white w-full flex items-start justify-start gap-10 p-16 flex-wrap">
+        <footer className="bg-stone-800 text-white w-full flex items-start justify-start gap-10 p-16 pb-32 flex-wrap">
             {linkGroups.map(group => (
                 <div key={group.header}>
                     <h3 className="font-bold text-xl pb-2">{group.header}</h3>

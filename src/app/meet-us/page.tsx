@@ -1,3 +1,5 @@
+import Hero from "@/components/Hero";
+
 export default function MeetUs() {
 
     const people = [
@@ -35,9 +37,8 @@ export default function MeetUs() {
 
     return (
         <>
-            <div
-                className="min-h-screen p-24 flex-wrap flex items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
-                <div className="flex items-center justify-center gap-16 flex-wrap">
+            <Hero>
+                <div className="md:mt-0 mt-32 flex items-center sm:justify-center justify-start gap-16 flex-wrap pb-8">
                     {people.map((person, index) => (
                         <div key={person.name} style={{animationDelay: `${(index + 1) * 100}ms`}}
                              className="flex items-center gap-4 animate-fade-in-and-up">
@@ -50,7 +51,7 @@ export default function MeetUs() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </Hero>
             <div className="flex flex-col items-center justify-center p-16 text-stone-900 gap-2">
                 <h2 className="font-bold text-2xl">Background</h2>
                 <p>

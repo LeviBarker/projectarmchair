@@ -1,12 +1,12 @@
 import {HeartIcon} from "@heroicons/react/24/solid";
+import Hero from "@/components/Hero";
 
 export default function Donate() {
 
     return (
         <>
-            <div
-                className="min-h-screen md:p-24 p-8 pt-32 flex-wrap flex items-start md:items-center justify-center bg-gradient-to-b from-[#EE453A] to-[#E7242E] text-white">
-                <div className="shadow flex flex-col items-start justify-center gap-16 flex-wrap">
+            <Hero>
+                <div className="md:mt-0 mt-32 shadow flex flex-col items-start justify-center gap-16 flex-wrap">
                     <div className="max-w-xl p-8 rounded bg-white text-stone-900">
                         <h1 className="text-3xl font-bold pb-4"><HeartIcon className="h-6 text-red-700"/>Donations</h1>
                         Good news: we are now officially a 501 (c)(3) organization! Click on the &#34;donate&#34; button
@@ -21,9 +21,8 @@ export default function Donate() {
                                             src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png"/>
                         </button>
                     </div>
-
                 </div>
-            </div>
+            </Hero>
         </>
     )
         ;
