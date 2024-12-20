@@ -34,8 +34,8 @@ export default function Footer() {
             header: 'Contact',
             links: [
                 {
-                    label: 'email: projectarmchair@outlook.com',
-                    href: 'mailto:projectarmchair@outlook.com'
+                    label: 'email: contact@projectarmchair.org',
+                    href: 'mailto:contact@projectarmchair.org'
                 },
                 {
                     label: 'phone: +1 (701) 471-4623',

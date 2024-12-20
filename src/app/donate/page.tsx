@@ -1,5 +1,7 @@
 import {HeartIcon} from "@heroicons/react/24/solid";
 import Hero from "@/components/Hero";
+import Link from "next/link";
+import {SparklesIcon} from "@heroicons/react/16/solid";
 
 export default function Donate() {
 
@@ -16,14 +18,22 @@ export default function Donate() {
                             P.O. Box 826<br/>
                             Mandan, ND 58554<br/>
                         </p>
-                        <button className="mt-8 bg-purple-100 rounded-full flex gap-1 px-6 py-4 font-bold items-center">
-                            Donate via <img alt="Stripe Logo" className="h-10"
-                                            src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png"/>
-                        </button>
+                        <div className="mt-8 flex items-center gap-8 justify-center">
+                            <button
+                                className="bg-purple-100 hover:bg-purple-300 rounded-full flex gap-1 px-8 h-16 font-bold items-center">
+                                Donate via <img alt="Stripe Logo" className="h-10"
+                                                src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png"/>
+                            </button>
+                            <span className="text-stone-500">or</span>
+                            <Link href="/wish-list"
+                                  className="whitespace-nowrap hover:bg-amber-300 inline-flex bg-amber-100 px-8 h-16 rounded-full gap-1 font-bold items-center">
+                                <SparklesIcon className="h-5 text-amber-500"/>
+                                <span>Donate a Book</span>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </Hero>
         </>
-    )
-        ;
+    );
 }
