@@ -18,13 +18,13 @@ export default function Donate() {
                             P.O. Box 826<br/>
                             Mandan, ND 58554<br/>
                         </p>
-                        <div className="mt-8 flex items-center gap-8 justify-center">
+                        <div className="mt-8 flex items-center gap-8 justify-center flex-wrap">
                             <button
                                 className="bg-purple-100 hover:bg-purple-300 rounded-full flex gap-1 px-8 h-16 font-bold items-center">
                                 Donate via <img alt="Stripe Logo" className="h-10"
                                                 src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png"/>
                             </button>
-                            <span className="text-stone-500">or</span>
+                            <span className="text-stone-500 sm:inline hidden">or</span>
                             <Link href="/wish-list"
                                   className="whitespace-nowrap hover:bg-amber-300 inline-flex bg-amber-100 px-8 h-16 rounded-full gap-1 font-bold items-center">
                                 <SparklesIcon className="h-5 text-amber-500"/>

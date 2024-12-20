@@ -48,7 +48,7 @@ export default function MeetUs() {
     return (
         <>
             <Hero>
-                <div className="md:mt-0 mt-32 flex items-center sm:justify-center justify-start gap-16 flex-wrap pb-8">
+                <div className="lg:mt-0 mt-32 flex items-center sm:justify-center justify-start gap-16 flex-wrap pb-8">
                     {people.map((person, index) => (
                         <div key={person.name} style={{animationDelay: `${(index + 1) * 100}ms`}}
                              className="flex items-center gap-4 animate-fade-in-and-up">
