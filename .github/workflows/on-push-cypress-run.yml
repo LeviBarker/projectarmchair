@@ -10,7 +10,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
+          start: npm run dev
           wait-on: http://localhost:3000
           config-file: 'cypress.config.ts'
           browser: chrome
