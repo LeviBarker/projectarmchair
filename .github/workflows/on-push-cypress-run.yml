@@ -1,0 +1,13 @@
+name: Chrome Cypress Test
+on: push
+jobs:
+  chrome:
+    runs-on: ubuntu-24.04
+    name: E2E on Chrome
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+      - name: Cypress Run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
