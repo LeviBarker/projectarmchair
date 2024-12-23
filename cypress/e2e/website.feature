@@ -4,13 +4,28 @@ Feature: All Website Tests
     When I visit the website
 
   Scenario: Visiting the Home page.
-    Then I should see the text: "Teachers reading aloud to children in crisis."
-    And I should see the text: "Project Armchair reaches out to children who are in need of a moment's reprieve from challenging situations."
+    When I click "Home" in the "navbar"
+    Then I should see "Teachers reading aloud"
+    And I should see "FAQ"
+    And I should see "Background"
+    And I should see "Mission"
+    And I should see "Vision"
 
   Scenario: Visiting the Meet Us page.
-    When I navigate to "Meet Us" via the navbar
-    Then I should see the text: "Vonda Dahl"
+    When I click "Meet Us" in the "navbar"
+    Then I should see "Vonda Dahl"
+    And I should see "Jerri Carlson"
+    And I should see "Annette Kost"
+
+  Scenario: Visiting the Get Involved page.
+    When I click "Get Involved" in the "navbar"
+    Then I should see "Get Involved"
+    And I should see "Join Our Team"
+    And I should see "Apply"
+    And I should see "Ideas"
 
   Scenario: Visiting the Donate page.
-    When I navigate to "Donate" via the navbar
-    Then I should see the text: "Donate"
+    When I click "Donate" in the "navbar"
+    Then I should see "Donations"
+    And I should see "501 (c)(3)"
+    And I should see "Donate a Book"

@@ -6,8 +6,7 @@ import {SparklesIcon} from "@heroicons/react/16/solid";
 export default function Donate() {
 
     return (
-        <>
-            <Hero>
+            <Hero data-cy="page content">
                 <div className="md:mt-0 mt-32 shadow flex flex-col items-start justify-center gap-16 flex-wrap">
                     <div className="max-w-xl p-8 rounded bg-white text-stone-900">
                         <h1 className="text-3xl font-bold pb-4"><HeartIcon className="h-6 text-red-700"/>Donations</h1>
@@ -34,6 +33,5 @@ export default function Donate() {
                     </div>
                 </div>
             </Hero>
-        </>
     );
 }

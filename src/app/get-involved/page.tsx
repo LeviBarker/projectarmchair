@@ -5,8 +5,7 @@ import Link from "next/link";
 export default function GetInvolved() {
 
     return (
-        <>
-            <Hero>
+            <Hero data-cy="page content">
                 <div className="md:mt-16 mt-32 max-w-xl p-8 rounded bg-white text-stone-900">
                     <h1 className="text-3xl font-bold pb-4"><UsersIcon className="h-6 text-purple-800"/>Get Involved
                     </h1>
@@ -26,7 +25,6 @@ export default function GetInvolved() {
                     </p>
                 </div>
             </Hero>
-        </>
     )
         ;
 }
