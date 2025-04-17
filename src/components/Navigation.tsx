@@ -42,7 +42,7 @@ export default function Navigation() {
              className="gap-4 transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
             <Menu>
                 <MenuButton
-                    className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12">
+                    className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12 text-stone-800">
                     <Bars2Icon className="h-6"/>
                 </MenuButton>
                 <MenuItems anchor={{to: 'bottom start', gap: '4px'}}
