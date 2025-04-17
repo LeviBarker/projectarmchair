@@ -38,8 +38,8 @@ export default function Navigation() {
     });
 
     return (
-        <nav data-cy="navbar" style={{backgroundColor: isScrolled ? "#27272a" : ""}}
-             className="gap-4 text-white transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
+        <nav data-cy="navbar" style={{backgroundColor: isScrolled ? "#f9fafbcc" : ""}}
+             className="gap-4 transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
             <Menu>
                 <MenuButton
                     className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12">
@@ -66,13 +66,13 @@ export default function Navigation() {
             <ul className="hidden md:flex items-center gap-2">
                 {routes.map(route => (
                     <li key={route.name}>
-                        <Link href={route.href} data-cy={route.name} className="font-bold rounded-full text-white hover:bg-stone-950/25 py-3 px-4">{route.name}</Link>
+                        <Link href={route.href} data-cy={route.name} className="font-bold rounded-full text-stone-800 hover:bg-stone-950/25 py-3 px-4">{route.name}</Link>
                     </li>
                 ))}
                 <li>
                     <Link href="/donate"
                           data-cy="Donate"
-                          className="font-bold shadow rounded-full bg-white hover:bg-red-50 text-red-700 py-2 px-4 flex items-center gap-2">
+                          className="font-bold shadow rounded-full text-white hover:bg-red-700 bg-gradient-to-b from-[#EE453A] to-[#E7242E] py-2 px-4 flex items-center gap-2">
                         <HeartIcon className="h-4" />
                         <span>Donate</span>
                     </Link>

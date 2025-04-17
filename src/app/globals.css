@@ -27,6 +27,16 @@ body {
   animation: 1000ms fade-in-and-up 200ms forwards;
 }
 
+.animate-fade-in-and-up-right {
+  opacity: 0;
+  animation: 1000ms fade-in-and-up-right 200ms forwards;
+}
+
+.animate-fade-in-and-up-left {
+  opacity: 0;
+  animation: 1000ms fade-in-and-up-left 200ms forwards;
+}
+
 .animation-delay-200ms {
   animation-delay: 300ms;
 }
@@ -51,6 +61,32 @@ body {
 
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-and-up-right {
+  from {
+    transform: translateY(24px) rotate(0deg);
+    transform-origin: center;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-and-up-left {
+  from {
+    transform: translateY(24px) rotate(0deg);
+    transform-origin: center;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) rotate(-15deg);
     opacity: 1;
   }
 }
