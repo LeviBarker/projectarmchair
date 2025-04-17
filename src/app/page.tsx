@@ -61,9 +61,9 @@ export default function Home() {
                 <BookOpenIcon
                     className="md:inline hidden z-0 text-red-300 animate-fade-in-and-up-right animation-delay-800ms absolute bottom-28 right-16 h-16 -rotate-12"/>
             </Hero>
-            <div className="flex items-center justify-start p-8">
+            <div className="flex items-center justify-start p-8 bg-red-600">
                 <div className="w-full">
-                    <h2 className="font-bold text-2xl pb-4 text-stone-800">FAQ</h2>
+                    <h2 className="font-bold text-4xl pb-4 text-white w-full text-center underline">FAQ</h2>
                     <div className="w-full">
                         {FAQs.map(FAQ => (
                             <Disclosure key={FAQ.title} as="div"
@@ -73,7 +73,7 @@ export default function Home() {
                                     <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
 
                                 </DisclosureButton>
-                                <DisclosurePanel className="text-gray-500">
+                                <DisclosurePanel className="text-stone-600">
                                     {FAQ.content}
                                 </DisclosurePanel>
                             </Disclosure>
