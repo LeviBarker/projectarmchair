@@ -7,7 +7,7 @@ export default function Hero({
 }>) {
     return (
         <div
-            className="min-h-screen bg-gradient-to-b from-[#EE453A] to-[#E7242E] flex md:items-center items-start justify-center px-8 pb-8 text-white">
+            className="min-h-screen bg-gray-50 flex md:items-center items-start justify-center px-8 pb-8 text-stone-800">
             {children}
         </div>)
 }

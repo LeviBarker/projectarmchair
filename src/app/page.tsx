@@ -1,4 +1,4 @@
-import {BookOpenIcon} from "@heroicons/react/24/solid";
+import {BookOpenIcon} from "@heroicons/react/24/outline";
 import {ChevronDownIcon} from "@heroicons/react/16/solid";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import Hero from "@/components/Hero";
@@ -32,9 +32,9 @@ export default function Home() {
                 <div className="lg:mt-0 mt-32 lg:flex gap-3">
                     <div className="max-w-lg relative">
                         <BookOpenIcon
-                            className="animation-delay-600ms animate-fade-in-and-up absolute -top-6 -left-6 h-32 z-0 text-red-400"/>
+                            className="animation-delay-600ms animate-fade-in-and-up absolute -top-6 -left-6 h-32 z-0 text-red-200"/>
                         <h1 className="animation-delay-200ms animate-fade-in-and-up text-5xl font-bold pb-4">Teachers
-                            reading aloud to children in <em className="italic">crisis</em>.</h1>
+                            reading aloud to children in <em className="italic text-red-500">crisis</em>.</h1>
                         <p className="animation-delay-400ms animate-fade-in-and-up">
                             Project Armchair reaches out to children who are in need of a moment&#39;s reprieve from
                             challenging situations. Through the power of rich literature, it is our hope that children
@@ -51,15 +51,15 @@ export default function Home() {
                     </div>
                 </div>
                 <BookOpenIcon
-                    className="md:inline hidden z-0 text-red-300 animate-fade-in-and-up absolute bottom-8 right-8 h-12 rotate-6"/>
+                    className="md:inline hidden z-0 text-teal-300 animate-fade-in-and-up-right absolute bottom-8 right-8 h-12 rotate-6"/>
                 <BookOpenIcon
-                    className="md:inline hidden z-0 text-red-400 animate-fade-in-and-up animation-delay-200ms absolute bottom-12 right-32 h-12 rotate-12"/>
+                    className="md:inline hidden z-0 text-red-400 animate-fade-in-and-up-left animation-delay-200ms absolute bottom-12 right-32 h-12 rotate-12"/>
                 <BookOpenIcon
-                    className="md:inline hidden z-0 text-red-500 animate-fade-in-and-up animation-delay-400ms absolute bottom-10 right-56 h-10 -rotate-6"/>
+                    className="md:inline hidden z-0 text-red-500 animate-fade-in-and-up-right animation-delay-400ms absolute bottom-10 right-56 h-10 -rotate-6"/>
                 <BookOpenIcon
-                    className="md:inline hidden z-0 text-red-400 animate-fade-in-and-up animation-delay-600ms absolute bottom-24 right-44 h-12 rotate-12"/>
+                    className="md:inline hidden z-0 text-teal-400 animate-fade-in-and-up-left animation-delay-600ms absolute bottom-24 right-44 h-12 rotate-12"/>
                 <BookOpenIcon
-                    className="md:inline hidden z-0 text-red-300 animate-fade-in-and-up animation-delay-800ms absolute bottom-28 right-16 h-16 -rotate-12"/>
+                    className="md:inline hidden z-0 text-red-300 animate-fade-in-and-up-right animation-delay-800ms absolute bottom-28 right-16 h-16 -rotate-12"/>
             </Hero>
             <div className="flex items-center justify-start p-8">
                 <div className="w-full">
