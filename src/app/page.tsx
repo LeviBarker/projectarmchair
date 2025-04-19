@@ -2,12 +2,14 @@ import {BookOpenIcon} from "@heroicons/react/24/outline";
 import {ChevronDownIcon} from "@heroicons/react/16/solid";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 
 export default function Home() {
 
     const FAQs = [
         {
             title: "Background",
+            showImage: true,
             content: "My name is Vonda Dahl and I am the Literacy Coordinator for Mandan Public Schools in Mandan, North Dakota. I cannot pinpoint the exact moment when the idea for Project Armchair first popped into my brain. I do know that a few weeks into the 2015 school year, I became aware that a homeless shelter for families was just blocks from my new school, where I was a reading interventionist, and that several of our students were living there.\n" +
                 "\n" +
                 "I could not stop thinking about that or about what I might do to help. I eventually dawned on me that as a reading specialist, I could read to kids, possibly help them with their reading skills, and in the process, offer the gift of getting lost in a really good story.\n" +
@@ -68,12 +70,23 @@ export default function Home() {
                         {FAQs.map(FAQ => (
                             <Disclosure key={FAQ.title} as="div"
                                         className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
-                                <DisclosureButton className="py-2 group flex justify-between items-center w-full">
+                                <DisclosureButton className="py-2 group flex justify-between items-center w-full font-bold">
                                     {FAQ.title}
                                     <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
 
                                 </DisclosureButton>
                                 <DisclosurePanel className="text-stone-600">
+                                    {FAQ.showImage && (<figure className="float-right p-4">
+                                        <Image
+                                            src="https://static.wixstatic.com/media/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg/v1/fill/w_812,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg"
+                                            alt="Original logo"
+                                            width={300}
+                                            height={200}
+                                        />
+                                        <figcaption>
+                                            <small>Created by art teacher Ali Hein</small>
+                                        </figcaption>
+                                    </figure>)}
                                     {FAQ.content}
                                 </DisclosurePanel>
                             </Disclosure>
