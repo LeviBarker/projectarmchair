@@ -3,7 +3,6 @@
 import Link from "next/link";
 import ProjectArmchairLogo from "@/components/ProjectArmchairLogo";
 import {HeartIcon} from "@heroicons/react/24/solid";
-import {useEffect, useState} from "react";
 import {Bars2Icon} from "@heroicons/react/16/solid";
 import {Menu, MenuButton, MenuItem, MenuItems} from "@headlessui/react";
 
@@ -25,21 +24,9 @@ export default function Navigation() {
         }
     ]
 
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    const handleScroll = (event: Event) => {
-        setIsScrolled((event.target as HTMLElement).scrollTop > 50)
-    }
-
-    useEffect(() => {
-        const appShell = document.getElementById("app-shell");
-        appShell?.addEventListener('scroll', handleScroll);
-        return () => appShell?.removeEventListener('scroll', handleScroll);
-    });
-
     return (
-        <nav data-cy="navbar" style={{backgroundColor: isScrolled ? "#f9fafbcc" : ""}}
-             className="gap-4 transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
+        <nav data-cy="navbar"
+             className="gap-4 bg-stone-50 transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
             <Menu>
                 <MenuButton
                     className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12 text-stone-800">
