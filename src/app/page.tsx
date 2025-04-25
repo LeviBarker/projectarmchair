@@ -66,16 +66,16 @@ export default function Home() {
             <div className="flex items-center justify-start p-8 bg-red-600">
                 <div className="w-full">
                     <h2 className="font-bold text-4xl pb-4 text-white w-full text-center underline">FAQ</h2>
-                    <div className="w-full">
+                    <div className="w-full" data-cy="FAQs">
                         {FAQs.map(FAQ => (
                             <Disclosure key={FAQ.title} as="div"
                                         className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
-                                <DisclosureButton className="py-2 group flex justify-between items-center w-full font-bold">
+                                <DisclosureButton data-cy={FAQ.title} className="py-2 group flex justify-between items-center w-full font-bold">
                                     {FAQ.title}
                                     <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
 
                                 </DisclosureButton>
-                                <DisclosurePanel className="text-stone-600">
+                                <DisclosurePanel className="text-stone-600 min-h-64">
                                     {FAQ.showImage && (<figure className="float-right p-4">
                                         <Image
                                             src="https://static.wixstatic.com/media/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg/v1/fill/w_812,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg"

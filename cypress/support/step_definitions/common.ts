@@ -4,6 +4,10 @@ When("I visit the website", () => {
     cy.visit("http://localhost:3000")
 })
 
+Then("I should not see {string}", (text: string)  => {
+    cy.contains(text).should("not.exist");
+})
+
 Then("I should see {string}", (text: string) => {
     cy.contains(text)
 })

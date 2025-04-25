@@ -1,7 +1,7 @@
 Feature: All Website Tests
 
   Background: I'm already on the home page
-    When I visit the website
+    Given I visit the website
 
   Scenario: Visiting the Home page.
     When I click "Home" in the "navbar"
@@ -10,6 +10,9 @@ Feature: All Website Tests
     And I should see "Background"
     And I should see "Mission"
     And I should see "Vision"
+    And I should not see "My name is Vonda Dahl"
+    When I click "Background" in the "FAQs"
+    Then I should see "My name is Vonda Dahl"
 
   Scenario: Visiting the Meet Us page.
     When I click "Meet Us" in the "navbar"
