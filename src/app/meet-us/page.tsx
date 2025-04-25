@@ -6,7 +6,7 @@ export default function MeetUs() {
         {
             name: 'Vonda Dahl',
             position: 'President',
-            imageUrl: 'https://static.wixstatic.com/media/e4c3dd_a6e08597e8574dc388f8fa1110b8b793~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_0,y_0,w_2448,h_2525/fill/w_240,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_a6e08597e8574dc388f8fa1110b8b793~mv2_d_2448_3264_s_4_2.jpg'
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/projectarmchair-37a48.firebasestorage.app/o/Vonda%20headshot.png?alt=media'
         },
         {
             name: 'Jerri Carlson',
@@ -24,11 +24,6 @@ export default function MeetUs() {
             imageUrl: 'https://static.wixstatic.com/media/e4c3dd_9fd65e11396049358bf66760d49b1714~mv2.jpg/v1/fill/w_248,h_248,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_9fd65e11396049358bf66760d49b1714~mv2.jpg'
         },
         {
-            name: 'Destiny Sisk',
-            position: 'Communications Director',
-            imageUrl: 'https://static.wixstatic.com/media/e4c3dd_c76e2bd2257a4d6b9797685e522f784b~mv2.jpg/v1/crop/x_0,y_304,w_4480,h_4576/fill/w_248,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/TM-BIS-04.jpg'
-        },
-        {
             name: 'Ashley Patterson',
             position: 'Member-at-Large',
             imageUrl: 'https://static.wixstatic.com/media/e4c3dd_d2cbfe328f5444f5893dd8bea2881a1b~mv2.jpeg/v1/fill/w_234,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_d2cbfe328f5444f5893dd8bea2881a1b~mv2.jpeg'
@@ -37,11 +32,6 @@ export default function MeetUs() {
             name: 'Sharon Johnson',
             position: 'Member-at-Large',
             imageUrl: 'https://static.wixstatic.com/media/e4c3dd_8508cdac921c4771a9034c4143d0d610~mv2.jpg/v1/fill/w_252,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_8508cdac921c4771a9034c4143d0d610~mv2.jpg'
-        },
-        {
-            name: 'Jenny Morrow',
-            position: 'Member-at-Large',
-            imageUrl: 'https://static.wixstatic.com/media/e4c3dd_dc98ded6d4c24d97b1660e39589cfd80~mv2.png/v1/crop/x_42,y_20,w_100,h_101/fill/w_140,h_139,al_c,lg_1,q_85,enc_avif,quality_auto/e4c3dd_dc98ded6d4c24d97b1660e39589cfd80~mv2.png'
         }
     ]
 

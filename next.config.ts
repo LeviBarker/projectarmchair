@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
               protocol: "https",
               hostname: "static.wixstatic.com",
               pathname: "/media/**"
+          },
+          {
+              protocol: "https",
+              hostname: "firebasestorage.googleapis.com",
+              pathname: "/v0/**"
           }
       ]
   }
