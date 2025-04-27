@@ -6,7 +6,7 @@ export default function MeetUs() {
         {
             name: 'Vonda Dahl',
             position: 'President',
-            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/projectarmchair-37a48.firebasestorage.app/o/Vonda%20headshot.png?alt=media'
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/projectarmchair-37a48.firebasestorage.app/o/Vonda%20headshot.jpg?alt=media'
         },
         {
             name: 'Jerri Carlson',

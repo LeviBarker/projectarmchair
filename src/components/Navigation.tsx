@@ -26,7 +26,7 @@ export default function Navigation() {
 
     return (
         <nav data-cy="navbar"
-             className="gap-4 bg-stone-50 transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
+             className="gap-4 bg-gradient-to-b from-stone-50 to-95% to-stone-50/80 backdrop-blur-md transition-colors duration-700 h-24 w-full flex items-center md:justify-between justify-start px-8 fixed top-0 left-0 z-10">
             <Menu>
                 <MenuButton
                     className="flex items-center justify-center md:hidden hover:bg-stone-800/10 rounded-full h-12 w-12 text-stone-800">
