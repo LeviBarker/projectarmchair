@@ -5,28 +5,6 @@ import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
-
-    const FAQs =
-        [
-            {
-                title: "Background",
-                showImage: true,
-                content: "My name is Vonda Dahl, and I am an educator with a background in elementary classroom teaching, reading intervention, literacy coaching, and a seven-year stint as a district literacy coordinator. I cannot pinpoint the exact moment when the idea for Project Armchair first popped into my brain. I do know that a few weeks into the 2015 school year, I became aware that a homeless shelter for families was located just blocks from my new school, where I was a reading interventionist, and that several of our students were living there." +
-                    "\n" +
-                    "I could not stop thinking about that or about what I might do to help. I eventually dawned on me that as a reading specialist, I could read to kids, possibly help them with their reading skills, and in the process, offer the gift of getting lost in a really good story. But hearing a story is only half the magic. Why not gift the book to them as well? Any teacher of reading knows that good readers get there by practice, practice, and more practice. And so, with the purchase of $170 in Scholastic books, I walked through the doors of the Welcome House family homeless shelter and began a journey that would introduce me to people that I am honored to know and taken me on paths I could not have predicted." +
-                    "\n" +
-                    "Mason Cooley said, “Reading gives us someplace to go when we have to stay where we are.” It is my hope that the books our volunteers place into the hands of precious children in challenging circumstances will give them a moment of joy and a measure of courage."
-            },
-            {
-                title: "Mission",
-                content: "The volunteer educators of Project Armchair are dedicated to serving the hospitalized and homeless children of our community by reading aloud rich children’s literature to children in crisis. Certified teacher volunteers encourage literacy engagement through choice of text (where applicable), model fluent reading, employ simple cognitive strategies, and gift the book to the child, so that the literacy experience may be replicated every time the child engages with that book."
-            },
-            {
-                title: "Vision",
-                content: "It is the goal of Project Armchair to give children in crisis in our community a reprieve from their crisis through the magic of the literacy journey."
-            }
-        ]
-
     return (
         <>
             <Hero>
