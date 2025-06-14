@@ -6,27 +6,26 @@ import Image from "next/image";
 
 export default function Home() {
 
-    const FAQs = [
-        {
-            title: "Background",
-            showImage: true,
-            content: "My name is Vonda Dahl and I am the Literacy Coordinator for Mandan Public Schools in Mandan, North Dakota. I cannot pinpoint the exact moment when the idea for Project Armchair first popped into my brain. I do know that a few weeks into the 2015 school year, I became aware that a homeless shelter for families was just blocks from my new school, where I was a reading interventionist, and that several of our students were living there.\n" +
-                "\n" +
-                "I could not stop thinking about that or about what I might do to help. I eventually dawned on me that as a reading specialist, I could read to kids, possibly help them with their reading skills, and in the process, offer the gift of getting lost in a really good story.\n" +
-                "\n" +
-                "But hearing a story is only half the magic. Why not gift the book to them as well? Any teacher of reading knows that good readers get there by practice, practice, and more practice. And so, with the purchase of $170 in Scholastic books, I walked through the doors of the Welcome House homeless shelter and began a journey that would introduce me to people that I am honored to know and taken me on paths I could not have predicted.\n" +
-                "\n" +
-                "Mason Cooley said that, “Reading gives us someplace to go when we have to stay where we are.” It is my hope that the books our volunteers place into the hands of precious children in challenging circumstances will give them a moment of joy and a measure of courage."
-        },
-        {
-            title: "Mission",
-            content: "The volunteer educators of Project Armchair are dedicated to serving the hospitalized and homeless children of our community by reading aloud rich children’s literature to children in crisis. Certified teacher volunteers encourage literacy engagement through choice of text (where applicable), model fluent reading, employ simple cognitive strategies, and gift the book to the child, so that the literacy experience may be replicated. It is the goal of Project Armchair to give children in crisis a reprieve from their crisis through the magic of the literacy journey."
-        },
-        {
-            title: "Vision",
-            content: "EFG"
-        }
-    ]
+    const FAQs =
+        [
+            {
+                title: "Background",
+                showImage: true,
+                content: "My name is Vonda Dahl, and I am an educator with a background in elementary classroom teaching, reading intervention, literacy coaching, and a seven-year stint as a district literacy coordinator. I cannot pinpoint the exact moment when the idea for Project Armchair first popped into my brain. I do know that a few weeks into the 2015 school year, I became aware that a homeless shelter for families was located just blocks from my new school, where I was a reading interventionist, and that several of our students were living there." +
+                    "\n" +
+                    "I could not stop thinking about that or about what I might do to help. I eventually dawned on me that as a reading specialist, I could read to kids, possibly help them with their reading skills, and in the process, offer the gift of getting lost in a really good story. But hearing a story is only half the magic. Why not gift the book to them as well? Any teacher of reading knows that good readers get there by practice, practice, and more practice. And so, with the purchase of $170 in Scholastic books, I walked through the doors of the Welcome House family homeless shelter and began a journey that would introduce me to people that I am honored to know and taken me on paths I could not have predicted." +
+                    "\n" +
+                    "Mason Cooley said, “Reading gives us someplace to go when we have to stay where we are.” It is my hope that the books our volunteers place into the hands of precious children in challenging circumstances will give them a moment of joy and a measure of courage."
+            },
+            {
+                title: "Mission",
+                content: "The volunteer educators of Project Armchair are dedicated to serving the hospitalized and homeless children of our community by reading aloud rich children’s literature to children in crisis. Certified teacher volunteers encourage literacy engagement through choice of text (where applicable), model fluent reading, employ simple cognitive strategies, and gift the book to the child, so that the literacy experience may be replicated every time the child engages with that book."
+            },
+            {
+                title: "Vision",
+                content: "It is the goal of Project Armchair to give children in crisis in our community a reprieve from their crisis through the magic of the literacy journey."
+            }
+        ]
 
     return (
         <>
@@ -67,34 +66,202 @@ export default function Home() {
                 <div className="w-full">
                     <h2 className="font-bold text-4xl pb-4 text-white w-full text-center underline">FAQ</h2>
                     <div className="w-full" data-cy="FAQs">
-                        {FAQs.map(FAQ => (
-                            <Disclosure key={FAQ.title} as="div"
-                                        className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
-                                <DisclosureButton data-cy={FAQ.title} className="py-2 group flex justify-between items-center w-full font-bold">
-                                    {FAQ.title}
-                                    <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
+                        <Disclosure as="div"
+                                    className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
+                            <DisclosureButton data-cy="Background"
+                                              className="py-2 group flex justify-between items-center w-full font-bold">
+                                Background
+                                <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
 
-                                </DisclosureButton>
-                                <DisclosurePanel className="text-stone-600 min-h-64">
-                                    {FAQ.showImage && (<figure className="float-right p-4">
-                                        <Image
-                                            src="https://static.wixstatic.com/media/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg/v1/fill/w_812,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4c3dd_5d3b6d93bc164e3abb4c780918066706~mv2.jpg"
-                                            alt="Original logo"
-                                            width={300}
-                                            height={200}
-                                        />
-                                        <figcaption>
-                                            <small>Created by art teacher Ali Hein</small>
-                                        </figcaption>
-                                    </figure>)}
-                                    {FAQ.content}
-                                </DisclosurePanel>
-                            </Disclosure>
-                        ))}
+                            </DisclosureButton>
+                            <DisclosurePanel className="text-stone-600 min-h-64">
+                                <div className="flex gap-4 items-start justify-between pt-4">
+                                    <Image
+                                        src="https://firebasestorage.googleapis.com/v0/b/projectarmchair-37a48.firebasestorage.app/o/Vonda%20headshot.jpg?alt=media"
+                                        alt="Original logo"
+                                        className="rounded-full"
+                                        width={64}
+                                        height={32}
+                                    />
+                                    <div>
+                                        <p className="pb-4">
+                                            My name is Vonda Dahl, and I am an educator with a background in elementary
+                                            classroom teaching, reading intervention, literacy coaching, and a
+                                            seven-year stint
+                                            as a district literacy coordinator. I cannot pinpoint the exact moment when
+                                            the idea
+                                            for Project Armchair first popped into my brain. I do know that a few weeks
+                                            into the
+                                            2015 school year, I became aware that a homeless shelter for families was
+                                            located
+                                            just blocks from my new school, where I was a reading interventionist, and
+                                            that
+                                            several of our students were living there.
+                                        </p>
+                                        <p className="pb-4">
+                                            I could not stop thinking about that or about what I might do to help. I
+                                            eventually
+                                            dawned on me that as a reading specialist, I could read to kids, possibly
+                                            help them
+                                            with their reading skills, and in the process, offer the gift of getting
+                                            lost in a
+                                            really good story. But hearing a story is only half the magic. Why not gift
+                                            the book
+                                            to them as well? Any teacher of reading knows that good readers get there by
+                                            practice, practice, and more practice. And so, with the purchase of $170 in
+                                            Scholastic books, I walked through the doors of the Welcome House family
+                                            homeless
+                                            shelter and began a journey that would introduce me to people that I am
+                                            honored to
+                                            know and taken me on paths I could not have predicted.
+                                        </p>
+                                        <p className="pb-4">
+                                            Mason Cooley said, “Reading gives us someplace to go when we have to stay
+                                            where we
+                                            are.” It is my hope that the books our volunteers place into the hands of
+                                            precious
+                                            children in challenging circumstances will give them a moment of joy and a
+                                            measure
+                                            of courage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </DisclosurePanel>
+                        </Disclosure>
+                        <Disclosure as="div"
+                                    className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
+                            <DisclosureButton data-cy="Mission"
+                                              className="py-2 group flex justify-between items-center w-full font-bold">
+                                Mission
+                                <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
+
+                            </DisclosureButton>
+                            <DisclosurePanel className="text-stone-600">
+                                <p className="py-4">
+                                    The volunteer educators of Project Armchair are dedicated to serving the
+                                    hospitalized and homeless children of our community by reading aloud rich children’s
+                                    literature to children in crisis. Certified teacher volunteers encourage literacy
+                                    engagement through choice of text (where applicable), model fluent reading, employ
+                                    simple cognitive strategies, and gift the book to the child, so that the literacy
+                                    experience may be replicated every time the child engages with that book.
+                                </p>
+                            </DisclosurePanel>
+                        </Disclosure>
+                        <Disclosure as="div"
+                                    className="p-4 bg-gray-100 text-stone-800 rounded shadow block mb-4">
+                            <DisclosureButton data-cy="vision"
+                                              className="py-2 group flex justify-between items-center w-full font-bold">
+                                Vision
+                                <ChevronDownIcon className="h-5 group-data-[open]:rotate-180"/>
+
+                            </DisclosureButton>
+                            <DisclosurePanel className="text-stone-600">
+                                <p className="py-4">
+                                    It is the goal of Project Armchair to give children in crisis in our community a
+                                    reprieve from their crisis through the magic of the literacy journey.
+                                </p>
+                                <p className="pb-8 italic">
+                                    <span className="font-bold">
+                                        The Sun…
+                                    </span>
+                                    <br/>
+                                    streams through tall windows
+                                    <br/>
+                                    in yellow shafts of warmth,
+                                    <br/>
+                                    The room is quiet,
+                                    <br/>
+                                    save for the gentle tick of the mantle clock.
+                                    <br/>
+                                    And speckles of golden dust
+                                    <br/>
+                                    float noiselessly in the vacuum of sound.
+                                    <br/>
+                                    The Chair…
+                                    <br/>
+                                    is massive, soft, and well-worn.
+                                    <br/>
+                                    like the hug of an old, fuzzy, stuffed bear.
+                                    <br/>
+                                    A child is there,
+                                    <br/>
+                                    lost in hug of the chair,
+                                    <br/>
+                                    mesmerized by hush of the sanctuary.
+                                    <br/>
+                                    The book in her lap is a portal
+                                    <br/>
+                                    to another universe.
+                                    <br/>
+                                    One without pain, fear, hunger, or uncertainty.
+                                    <br/>
+                                    The child in the enormous chair
+                                    <br/>
+                                    does not hear the tick of the clock,
+                                    <br/>
+                                    or see the golden specks
+                                    <br/>
+                                    that float around her head.
+                                    <br/>
+                                    She is only cognizant
+                                    <br/>
+                                    of the place she has entered
+                                    <br/>
+                                    through the Portal.
+                                    <br/>
+                                    Her heart is light
+                                    <br/>
+                                    and her world at peace.
+                                    <br/>
+                                    For this magic, sacred moment,
+                                    <br/>
+                                    all is well.
+                                </p>
+                                <p className="italic">
+                                    <span className="font-bold">The Chair...</span>
+                                    <br/>
+                                    is massive, soft, and well-worn.
+                                    <br/>
+                                    like the hug of an old, fuzzy, stuffed bear.
+                                    <br/>
+                                    A child is there,
+                                    <br/>
+                                    lost in hug of the chair,
+                                    <br/>
+                                    mesmerized by hush of the sanctuary.
+                                    <br/>
+                                    The book in her lap is a portal
+                                    <br/>
+                                    to another universe.
+                                    <br/>
+                                    One without pain, fear, hunger, or uncertainty.
+                                    <br/>
+                                    The child in the enormous chair
+                                    <br/>
+                                    does not hear the tick of the clock,
+                                    <br/>
+                                    or see the golden specks
+                                    <br/>
+                                    that float around her head.
+                                    <br/>
+                                    She is only cognizant
+                                    <br/>
+                                    of the place she has entered
+                                    <br/>
+                                    through the Portal.
+                                    <br/>
+                                    Her heart is light
+                                    <br/>
+                                    and her world at peace.
+                                    <br/>
+                                    For this magic, sacred moment,
+                                    <br/>
+                                    all is well.
+                                </p>
+                            </DisclosurePanel>
+                        </Disclosure>
                     </div>
                 </div>
-
-
             </div>
         </>
     );
