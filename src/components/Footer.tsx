@@ -34,12 +34,12 @@ export default function Footer() {
             header: 'Contact',
             links: [
                 {
-                    label: 'email: contact@projectarmchair.org',
-                    href: 'mailto:contact@projectarmchair.org'
+                    label: 'email: projectarmchair@outlook.com',
+                    href: 'mailto:projectarmchair@outlook.com'
                 },
                 {
-                    label: 'phone: +1 (701) 471-4623',
-                    href: 'tel:7014714623'
+                    label: 'phone: +1 701-426-8828',
+                    href: 'tel:7014268828'
                 },
                 {
                     label: 'map: Mandan, North Dakota',
@@ -61,11 +61,6 @@ export default function Footer() {
                             </li>))}
                     </ul>
                 </div>))}
-            <div>
-                {/*<span className="absolute -left-4 -top-4 text-9xl z-0 font-serif">&#34;</span>*/}
-                <h3 className="font-bold text-xl pb-2">Testimonials</h3>
-                <blockquote className="border-l-stone-200 border-l-4 pl-8">Lorem ipsum</blockquote>
-            </div>
         </footer>
     );
 }

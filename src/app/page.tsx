@@ -22,7 +22,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="relative" style={{zIndex: 9}}>
-                        <video className="lg:mt-0 mt-8 w-[560px] rounded-xl shadow"
+                        <video className="lg:mt-0 mt-8 w-[560px] rounded-xl shadow object-cover"
                                poster="https://static.wixstatic.com/media/e4c3dd_8e7d6ce21335478e933e2f293da5e927~mv2.jpg/v1/fill/w_1960,h_912,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Young%2520Girl%2520Reading_edited.jpg"
                                controls={true} crossOrigin="anonymous" playsInline={true}
                                preload="auto" loop={true} tabIndex={-1} autoPlay={false}
